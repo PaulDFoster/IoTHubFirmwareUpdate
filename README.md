@@ -1,5 +1,5 @@
 # IoTHubFirmwareUpdate
-IoT Hub device firmware update example using Device TWIN, including trigger application.
+IoT Hub device firmware update example using Direct Method and Device TWIN, including trigger application.
 
 Initially built from tutorial: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-csharp-csharp-firmware-update
 
@@ -10,7 +10,7 @@ Two projects.
 
 <b>Trigger</b>
 
-The trigger application sends updated device properties to the target device and then reports back progress information received from the device during the upgrade process using device properties.
+The trigger application sends updated device firmware requirements to the target device via a direct method call. It then reports back progress information received from the device during the upgrade process using device properties(TWIN).
 
 <b>Device</b>
 
